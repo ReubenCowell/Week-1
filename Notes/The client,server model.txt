@@ -1,0 +1,27 @@
+https://user-images.githubusercontent.com/88235356/127778712-0704a327-a65d-49f6-b4c8-74fe3dcb997f.png
+
+The client/server model:
+
+A server is a computer on a network that provides a resource that can be used by any authorised client station.
+
+The servers are 'the boss', they hold power and can grant or deny any request.
+Servers are usually always on and connected to the internet so that users can access their resources and services at any time. There are many types of server:
+
+The most common type of server you will interact with is a web server; web servers store and provide the webpages we browse. This course is stored on a server; every time you complete a step, your device will request the next one.
+Email servers direct email to the intended recipient and sometimes filter out spam.
+File transfer servers provide files to users, like those that provide the songs we listen to on Spotify.
+
+
+A client is a computer or computer-controlled device that provides a user with access to a network.
+
+the client can make requests to servers and display the results, they don't have to always be on, they can connect to a
+server at any time.
+
+Some clients are dedicated hardware devices, for example speed cameras. They capture photos and licence plate numbers
+and send a request to a central server to store and process them; that is their entire functionality.
+
+A lot of applications turn your smartphone into a client, not processing or computing much itself but instead making
+requests to servers.
+
+
+
