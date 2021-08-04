@@ -1,3 +1,6 @@
 https://www.futurelearn.com/courses/networking-with-python-socket-programming-for-communication/6/steps/1120258
 
-Introduction to sockets
+An introduction to sockets
+
+
+sockets are not physical, they are abstract and a tool that helps make communication simpler
