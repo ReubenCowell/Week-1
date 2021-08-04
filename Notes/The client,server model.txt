@@ -22,6 +22,3 @@ and send a request to a central server to store and process them; that is their 
 
 A lot of applications turn your smartphone into a client, not processing or computing much itself but instead making
 requests to servers.
-
-
-
