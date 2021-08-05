@@ -20,3 +20,4 @@ connection_socket.send(data)  # sends the data to the connection socket
 # it is good practice to close sockets:
 connection_socket.close()
 server_socket.close()
+
