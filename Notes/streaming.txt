@@ -10,10 +10,10 @@ There is, however, no guarantee that the number of bytes returned by a call to r
 
 It could be that multiple messages have been sent using send, which are retrieved by a single call to recv.
 
-there may have to also be multiple rcv to retrive all the bytes in a message
+there may have to also be multiple rcv to retrieve all the bytes in a message
 This creates two practical problems for programmers:
 
 1. How to determine the end of one message and the start of another
 2. How to reconstruct a single message from multiple sets of bytes
 
-when there is only text in a message, you can add an end of transmisssion message like \n or \4
+when there is only text in a message, you can add an end of transmission message like \n or \4
