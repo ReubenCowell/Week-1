@@ -13,4 +13,8 @@ data = client_socket.recv(1024)  # data is received and added to the data variab
 message = data.decode()  # decodes the message
 print(message)  # prints the message
 
+message = "message received"
+data = message.encode()
+client_socket.send(data)
+
 client_socket.close()  # it is good practice to close sockets

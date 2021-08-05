@@ -12,12 +12,15 @@ connection_socket, address = server_socket.accept()  # if you put 127.0.0.0:8081
 Ports 0 to 1023 are well known ports that are usually restricted for specific uses: for example, port 80 is HTTP and 
 should not really be used. """
 # it appears as connected, 17.0.0.0 is the local port of this computer
-print('connect')
+print('connected')
 
 data = message.encode()  # encodes the message using utf-8
 connection_socket.send(data)  # sends the data to the connection socket
 
+msg = connection_socket.recv(1024)
+message = msg.decode()
+print(message)
+
 # it is good practice to close sockets:
 connection_socket.close()
 server_socket.close()
-
