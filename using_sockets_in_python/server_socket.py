@@ -1,5 +1,12 @@
 import socket  # to use the socket api, import the module
 
+
+def send_text(sending_socket, text):  # this adds a terminating character to the string and sends
+    text = text + "\n"
+    data = text.encode()
+    sending_socket.send(data)
+
+
 message = input('what do you want to send?')
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # creates a socket
 
@@ -14,8 +21,7 @@ should not really be used. """
 # it appears as connected, 17.0.0.0 is the local port of this computer
 print('connected')
 
-data = message.encode()  # encodes the message using utf-8
-connection_socket.send(data)  # sends the data to the connection socket
+send_text(connection_socket, message)  # calls the send function that also adds a end of transmission character
 
 msg = connection_socket.recv(1024)
 message = msg.decode()
