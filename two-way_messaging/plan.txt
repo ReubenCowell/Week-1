@@ -1,0 +1,41 @@
+to make a two-way chat application over a network
+
+requirements:
+1. it needs to have a choice between server and to connect to the server and be the client
+2. wait for a message to be received and allow for there to be a reply
+3. have clear prompts like 'a client has connected' or 'waiting for a reply' etc.
+4. the parts for receiving messages, displaying it, inputting a message need to be the same, no matter if it is for the server or the client
+
+Pseudocode for how it should work
+
+input whether you want to be a client or server
+if it is the client, ask to input the ip and if the server is chosen, it binds the socket to the main ip
+the server gets the message from the client socket
+it needs to output the message, and it then asks for the input to send to the client
+it then sends the message to the client and repeats
+
+
+
+
+
+                    Requirements for a server:
+
+As you saw earlier this week, you can follow the life cycle of a socket to set up your server.
+
+The requirements for establishing a server are:
+
+Create a socket of a specific type, in this case a stream socket
+Bind it to a network address and a port
+Listen for a connection
+Accept the connection and store the details
+
+
+
+                    Requirements for a client:
+
+You should also follow the life cycle for setting up a client socket:
+
+Create a socket of a specific type, in this case a stream socket
+Input a server address
+Connect the socket using the address
+Send a message to the server
