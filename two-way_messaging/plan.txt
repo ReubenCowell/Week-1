@@ -10,6 +10,7 @@ Pseudocode for how it should work
 
 input whether you want to be a client or server
 if it is the client, ask to input the ip and if the server is chosen, it binds the socket to the main ip
+create the necessary servers
 the server gets the message from the client socket
 it needs to output the message, and it then asks for the input to send to the client
 it then sends the message to the client and repeats

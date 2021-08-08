@@ -17,6 +17,11 @@ print("Waiting for connection")
 
 connection_socket, address = server_socket.accept()  # if you put 127.0.0.1:8081 into a web browser, it will not
 # display anything, but this will be seen as connected,  172.0.0.1  is the local port of this computer
+"""
+socket.accept()
+Accept a connection. The socket must be bound to an address and listening for connections. The return value is a pair (conn, address) where conn is a new socket object usable to send and receive data on the connection, and address is the address bound to the socket on the other end of the connection.
+
+The newly created socket is non-inheritable."""
 print("connected")
 
 """Ports are typically used to identify the purpose of the connection and can be any number between 0 and 65535. 
