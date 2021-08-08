@@ -1,0 +1,51 @@
+https://www.futurelearn.com/courses/networking-with-python-socket-programming-for-communication/6/steps/1120258
+
+An introduction to sockets
+
+
+sockets are not physical, they are abstract and a tool that helps make communication simpler
+
+They are in pairs and are like a tube with two ports at each end,
+whatever is in one end of the tube can be taken out the other
+
+The socket is defined as a mechanism for machine-to-machine communication.
+
+A programmer doesn’t need to know how a network works, or how data is transmitted;
+
+Socket is used how to refer to a socket the used internet protocol and particularly the transmission control protocol
+
+they are key to allow applications to communicate with other apps through the transport layer
+
+there are lots of types of sockets
+he Berkeley sockets API is the most widely used and a version exists in most general-purpose programming languages.
+
+a standard for the life cycle (process) for a socket:
+
+Open it
+Read from it
+Write to it
+Close it
+
+Server Socket:
+
+A socket for a server is always waiting, when a client connects, it deals with request:
+
+To create a server socket:
+
+First create a socket of a specific type (protocol)
+Then bind the socket to the network address where connections will be made
+Set the socket to listen for a client to make a connection
+Wait for a connection, accept it, and create a new socket to manage the connection between the server and this client; every client that connects to the server will get its own connection socket
+Then send and receive (recv) data over the connection socket
+Finally, close the socket when new connections are no longer needed
+
+Client socket:
+
+when a client server socket is waiting for a connection, a client server can connect to it
+
+Creating a client socket is a simpler process, but there are still defined steps:
+
+First create a socket that is of the same type as the socket you wish to connect to
+Then connect the socket to the network address of the server socket
+You then send and receive (recv) data over the socket
+Finally, close the connection when complete
